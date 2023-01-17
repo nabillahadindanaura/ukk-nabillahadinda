@@ -41,11 +41,24 @@
 
     <div class="menu-content">
         @foreach ($menu as $m)
-        <div class="menu-content-item" style="background:url({{ $m->cover }}) ">
-            <p>${{$m->harga}}</p>
-            <p>{{$m->nama}}</p>
-        </div>
+            <div class="menu-content-item" style="background:url({{ $m->cover }}) ">
+                <p>${{ $m->harga }}</p>
+                <p>{{ $m->nama }}</p>
+            </div>
         @endforeach
+    </div>
+    <div class="menu-popup">
+        <div class="menu-value">
+            <div class="menu-value-plus">
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <p>$20.6</p>
+            <div class="menu-value-minus">
+                <ion-icon name="remove-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
     </div>
 @endsection
 
