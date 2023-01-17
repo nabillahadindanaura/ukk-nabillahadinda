@@ -14,10 +14,10 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background: url({{asset('img/banner2.jpg')}})"></div>
+                    <div class="swiper-slide-img" style="background: url({{ asset('img/banner2.jpg') }})"></div>
                 </div>
                 <div class="swiper-slide">
-                <div class="swiper-slide-img" style="background: url({{asset('img/banner1.jpg')}})"></div>
+                    <div class="swiper-slide-img" style="background: url({{ asset('img/banner1.jpg') }})"></div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -28,17 +28,25 @@
             <p>Kategori</p>
         </div>
         <div class="kategori-content">
-            <div class="kategori-content-item">
-                <img src="{{asset('img/cookies.png')}}" alt="">
+            <a href="/menu" class="kategori-content-item">
+                <img src="{{ asset('img/cookies.png') }}" alt="">
                 <p>Cookies</p>
-            </div>
-            <a href="menu/" class="kategori-content-item">
-                <img src="{{asset('img/bread (1).png')}}" alt="">
+            </a>
+            <a href="/menu" class="kategori-content-item">
+                <img src="{{ asset('img/bread (1).png') }}" alt="">
                 <p>Bread</p>
             </a>
         </div>
     </div>
-    
+
+    <div class="menu-content">
+        @foreach ($menu as $m)
+        <div class="menu-content-item" style="background:url({{ $m->cover }}) ">
+            <p>${{$m->harga}}</p>
+            <p>{{$m->nama}}</p>
+        </div>
+        @endforeach
+    </div>
 @endsection
 
 @section('js')

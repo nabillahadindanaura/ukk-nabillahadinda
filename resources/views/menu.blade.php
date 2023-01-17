@@ -12,6 +12,7 @@
                 <p>Cake With Almonds</p>
             </div>
             <div class="menu-content-item" style="background:url({{ asset('img/roti2.jpg') }}) ">
+                
                 <p>$2.05</p>
                 <p>Burger Buns</p>
             </div>
