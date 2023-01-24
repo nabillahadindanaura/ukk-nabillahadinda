@@ -52,10 +52,14 @@
             <div class="menu-value-plus">
                 <ion-icon name="add-outline"></ion-icon>
             </div>
-            <p>$20.6</p>
+            <p>1</p>
             <div class="menu-value-minus">
                 <ion-icon name="remove-outline"></ion-icon>
             </div>
+        </div>
+        <div class="menu-total">
+            <p>Add to bag</p>
+            <p>$2.95</p>
         </div>
     </div>
 

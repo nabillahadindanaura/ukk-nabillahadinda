@@ -18,3 +18,10 @@ Route::get('/', [menuController::class , 'index']);
 Route::get('/menu', function () {
     return view('menu');
 });
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
+Route::get('/dashboard/menu', function () {
+    return view('admin.menu');
+});
+

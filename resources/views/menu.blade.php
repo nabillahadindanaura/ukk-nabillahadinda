@@ -31,4 +31,7 @@
             <ion-icon name="arrow-back-circle-outline"></ion-icon>
         </div>
         </a>
+        <div class="detail-menu">
+            <div class="detail-menu-warapper"></div>
+        </div>
     @endsection
